@@ -4,41 +4,42 @@
 @use "../components/bouton.scss";
 
 main {
-    background-color: width;
-  
+  font-size: 800;
+  background-color: width;
     .localisation {
       background-color: variable.$couleur-seconaire;
-
       .fa-sharp {
         margin: 1rem;
         font-weight: 800;
       }
     }
   }
-  
+  .localisation {
+    background-color:  rgb(235, 235, 230);
+  }
+
   .center {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    background-color: #f3f3f3;
     font-size: 1rem;
-    position: relative;
   }
   
   .proposition {
     display: flex;
     flex-direction: column;
     align-content: center;
-  
+    background-color: rgb(255, 255, 255);
+
     button {
-      color: #f2f2f2;
+      color: variable.$couleur-primaire;
       font-weight: 500;
       font-size: 1rem;
       border: none;
-      width: 90%;
+      width: max-content;
       padding: 1rem 1.5rem;
-      margin: 0 1rem;
+      margin: 0 4rem;
       border-radius: 2rem;
       @include mixin.bg-image;
       cursor: pointer;

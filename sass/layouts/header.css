@@ -1,7 +1,10 @@
 header {
   justify-content: center;
-  padding: 1rem;
-  box-shadow: 0 0 0 10 rgb(0, 0, 0);
-  order: 1;
+  position: sticky;
+  top: 0;
+  bottom: 100%;
+  z-index: 3;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background-color: white;
 }/*# sourceMappingURL=header.css.map */
