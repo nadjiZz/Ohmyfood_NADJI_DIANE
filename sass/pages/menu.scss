@@ -1,0 +1,136 @@
+@use "../components/bouton.scss";
+@use "../utils/mixin.scss";
+@use "../utils/variable.scss";
+
+main {
+    background-color: variable.$couleur-seconaire;
+    object-fit: cover;
+
+    & h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    & .ensembles {
+        width: 100%;
+        margin-top: -3rem;
+        border-top-right-radius: 2rem;
+        border-top-left-radius: 2rem;
+        background-color: variable.$couleur-seconaire;
+        z-index: 1;
+        position: relative;
+
+        & .titre-anim {
+            padding: 1rem 2rem 1rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        & .ensemble {
+            display: grid;
+            grid-template-columns: auto auto auto;
+
+            @media (max-width: 800px) {
+                grid-template-columns: auto;
+            }
+
+            & .contenaire {
+                & .capital {
+                    text-transform: uppercase;
+                    position: relative;
+                    padding-bottom: 0.5rem;
+                    font-weight: normal;
+
+                    &::after {
+                        content: "";
+                        width: 3rem;
+                        height: 0.25rem;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                    }
+                }
+
+                & .liste-menu {
+                    list-style: none;
+
+                    & .menus {
+                        margin-bottom: 1rem;
+
+                        & .menu {
+                            background-color: white;
+                            height: 10%;
+                            border-radius: 2rem;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: flex-end;
+                            padding: 0 1rem;
+
+                            & .menu-colone {
+                                padding: 1rem;
+                            }
+
+                            & .menu-prix {
+                                margin-left: auto;
+                                font-weight: 900;
+                            }
+                        }
+
+                        & .cocher {
+                            $button-width: 4rem;
+                            border-radius: 0 50% 50% 0;
+                            margin-right: - $button-width;
+                            width: $button-width;
+                            height: 100%;
+                            transition: margin-right 0.5 s;
+                            opacity: 0;
+                            & .fas {
+                                color: variable.$couleur-primaire;
+
+                            }
+                        }
+
+                        & :hover {
+                            .cocher {
+                                margin: 0;
+                                opacity: 1;
+                                background-color: rgb(25, 245, 95);
+                            }
+
+                            & .fas {
+                                animation: car 0.5s easy in-out;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        button {
+            color: #f2f2f2;
+            font-weight: 500;
+            font-size: 1rem;
+            border: none;
+            width: 90%;
+            padding: 1rem 1.5rem;
+            margin: 0 1rem;
+            border-radius: 2rem;
+            background-color: #686868;
+            background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.8), rgba(255, 121, 218, 0.8));
+            cursor: pointer;
+            box-shadow: 12px 0px 5px 1px rgba(0, 0, 255, 0.2);
+            transition-duration: 150ms;
+        }
+
+        .Commander:hover {
+            transform: scale(1.05);
+        }
+    }
+}

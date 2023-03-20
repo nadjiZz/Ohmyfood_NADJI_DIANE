@@ -1,0 +1,88 @@
+@use "../utils/mixin.scss";
+@use "../utils/variable.scss";
+
+#restaurants {
+  justify-content: center;
+  align-content: center;
+  background-color: variable.$couleur-seconaire;
+  & h2 {
+    margin: 1rem;
+  }
+
+  & .restaurants__cartes {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    @media (max-width: 800px) {
+      grid-template-columns: auto auto ;
+    }
+    @media (max-width: 450px) {
+      grid-template-columns: auto;
+    }
+
+    & .carte {
+      margin: 1rem;
+      border-radius: 5%;
+      background-color: variable.$couleur-primaire;
+      position: relative;
+
+      & a {
+        text-decoration: none;
+        color: inherit;
+
+        & img {
+          width: 100%;
+          height: 10rem;
+          background-size: cover;
+          border-top-left-radius: 5%;
+          border-top-right-radius: 5%;
+        }
+
+        & .nouveau {
+          background-color: rgb(46, 171, 171);
+          position: absolute;
+          top: 3%;
+          right: 3%;
+          padding: 0.5rem;
+        }
+
+        & .nouveau1 {
+          background-color: rgb(46, 171, 171);
+          position: absolute;
+          top: 6%;
+          right: 3%;
+          padding: 0.5rem;
+        }
+
+        & footer {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-bottom-left-radius: 20%;
+          border-bottom-right-radius: 15%;
+          position: relative;
+
+          & .pied {
+            display: flex;
+            flex-direction: column;
+
+            padding: .5rem;
+            align-items: flex-start;
+
+            & h3,
+            span {
+              padding: 0;
+              margin: 0;
+            }
+          }
+          & .coeur {
+            padding: 1rem;
+         
+            }
+
+          }
+        }
+      }
+
+    }
+  }

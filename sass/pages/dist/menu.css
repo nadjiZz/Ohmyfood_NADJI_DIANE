@@ -1,0 +1,111 @@
+main {
+  background-color: #f6f6f6;
+  object-fit: cover;
+}
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6,
+main p {
+  margin: 0%;
+  padding: 0%;
+}
+main .ensembles {
+  width: 100%;
+  margin-top: -3rem;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  background-color: #f6f6f6;
+  z-index: 1;
+  position: relative;
+}
+main .ensembles .titre-anim {
+  padding: 1rem 2rem 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .ensembles .ensemble {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+@media (max-width: 800px) {
+  main .ensembles .ensemble {
+    grid-template-columns: auto;
+  }
+}
+main .ensembles .ensemble .contenaire .capital {
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 0.5rem;
+  font-weight: normal;
+}
+main .ensembles .ensemble .contenaire .capital::after {
+  content: "";
+  width: 3rem;
+  height: 0.25rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+main .ensembles .ensemble .contenaire .liste-menu {
+  list-style: none;
+}
+main .ensembles .ensemble .contenaire .liste-menu .menus {
+  margin-bottom: 1rem;
+}
+main .ensembles .ensemble .contenaire .liste-menu .menus .menu {
+  background-color: white;
+  height: 10%;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 1rem;
+}
+main .ensembles .ensemble .contenaire .liste-menu .menus .menu .menu-colone {
+  padding: 1rem;
+}
+main .ensembles .ensemble .contenaire .liste-menu .menus .menu .menu-prix {
+  margin-left: auto;
+  font-weight: 900;
+}
+main .ensembles .ensemble .contenaire .liste-menu .menus .cocher {
+  border-radius: 0 50% 50% 0;
+  margin-right: -4rem;
+  width: 4rem;
+  height: 100%;
+  transition: margin-right 0.5 s;
+  opacity: 0;
+}
+main .ensembles .ensemble .contenaire .liste-menu .menus .cocher .fas {
+  color: white;
+}
+main .ensembles .ensemble .contenaire .liste-menu .menus :hover .cocher {
+  margin: 0;
+  opacity: 1;
+  background-color: #19f55f;
+}
+main .ensembles .ensemble .contenaire .liste-menu .menus :hover .fas {
+  animation: car 0.5s easy in-out;
+}
+main .ensembles button {
+  color: #f2f2f2;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  width: 90%;
+  padding: 1rem 1.5rem;
+  margin: 0 1rem;
+  border-radius: 2rem;
+  background-color: #686868;
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.8), rgba(255, 121, 218, 0.8));
+  cursor: pointer;
+  box-shadow: 12px 0px 5px 1px rgba(0, 0, 255, 0.2);
+  transition-duration: 150ms;
+}
+main .ensembles .Commander:hover {
+  transform: scale(1.05);
+}

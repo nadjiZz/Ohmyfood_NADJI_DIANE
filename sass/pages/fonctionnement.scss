@@ -1,0 +1,59 @@
+@use "../utils/mixin.scss";
+@use "../utils/variable.scss";
+
+.fonctionnement {
+    background-color: variable.$couleur-primaire;
+    & .contenaire {
+      & h2 {
+        margin: 1rem;
+        padding: 1;
+      }
+
+      & ol {
+        display: flex;
+        counter-reset: liste;
+        list-style: none;
+        gap: 1rem;
+        padding: 1rem;
+        @media (max-width: 800px) {
+          flex-direction: column;
+        }
+
+        li::before {
+          content: counter(liste);
+          counter-increment: liste;
+          color: #f6f6f6;
+          @include mixin.bg-image;
+          width: 2rem;
+          height: 2rem;
+          gap: 1rem;
+          border-radius: 50%;
+          display: grid;
+          place-items: center;
+          position: absolute;
+          left: -1rem;
+          top: 0.5rem;
+        }
+        
+        & li {
+          gap:1rem;
+          display: flex;
+          position: relative;
+          list-style-type: none;
+          border: none;
+          padding: 1rem 2rem;
+          flex-grow: 1;
+          border-radius: 2rem;
+          background-color: variable.$couleur-seconaire;
+          cursor: pointer;
+          &:hover {
+            @include mixin.over;
+            background-color: #ddc9dc;
+          }
+          & .fas {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }

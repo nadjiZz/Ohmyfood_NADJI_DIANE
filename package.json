@@ -1,0 +1,14 @@
+{
+  "name": "ohmyfood_nadji_diane",
+  "version": "1.0.0",
+  "description": "projet2_Openclasrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:./libs/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

@@ -1,0 +1,273 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: white;
+}
+body a {
+  color: black;
+  text-decoration: none;
+}
+
+header {
+  justify-content: center;
+  padding: 1rem;
+  box-shadow: 2px 12px 25px 8px #f6f6f6;
+  order: 1;
+}
+
+footer .foot {
+  background-color: black;
+}
+footer .foot h2 {
+  height: 15px;
+  margin-left: 2rem;
+  color: white;
+}
+footer .foot ul {
+  list-style: none;
+}
+footer .foot ul li {
+  padding: 0.3rem;
+}
+footer .foot ul li a {
+  text-decoration: none;
+  color: white;
+}
+footer .foot ul li a i {
+  margin-right: 0.5rem;
+}
+
+main {
+  background-color: #f6f6f6;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6,
+main p {
+  margin: 0%;
+  padding: 0%;
+}
+main .ensembles {
+  width: 100%;
+  margin-top: -3rem;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  background-color: #f6f6f6;
+  z-index: 1;
+  position: relative;
+}
+main .ensembles .titre-anim {
+  padding: 1rem 2rem 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .ensembles .ensemble .contenaire .capital {
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 0.5rem;
+  font-weight: normal;
+}
+main .ensembles .ensemble .contenaire .capital::after {
+  content: "";
+  width: 3rem;
+  height: 0.25rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+main .ensembles .ensemble .contenaire .liste-menu {
+  list-style: none;
+}
+main .ensembles .ensemble .contenaire .liste-menu .menus {
+  margin-bottom: 1rem;
+}
+main .ensembles .ensemble .contenaire .liste-menu .menus .menu {
+  background-color: white;
+  height: 10%;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 1rem;
+}
+main .ensembles .ensemble .contenaire .liste-menu .menus .menu .menu-colone {
+  padding: 1rem;
+}
+main .ensembles .ensemble .contenaire .liste-menu .menus .menu .menu-prix {
+  margin-left: auto;
+  font-weight: 900;
+}
+main .ensembles .ensemble .contenaire .liste-menu .menus .cocher {
+  height: 3rem;
+  width: 2rem;
+  background-color: aqua;
+  border-radius: 0 50% 50% 0;
+}
+
+#restaurants {
+  justify-content: center;
+  align-content: center;
+  background-color: #f6f6f6;
+}
+#restaurants .contenaire {
+  justify-content: center;
+}
+#restaurants .contenaire h2 {
+  margin: 1rem;
+}
+#restaurants .contenaire .restaurants__cartes {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 2rem;
+}
+#restaurants .contenaire .restaurants__cartes .carte {
+  margin: 1rem;
+  border-radius: 5%;
+  background-color: white;
+  position: relative;
+}
+#restaurants .contenaire .restaurants__cartes .carte a {
+  text-decoration: none;
+  color: inherit;
+}
+#restaurants .contenaire .restaurants__cartes .carte a img {
+  width: 100%;
+  height: 10rem;
+  background-size: cover;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+#restaurants .contenaire .restaurants__cartes .carte a .nouveau {
+  background-color: rgb(46, 171, 171);
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  padding: 0.5rem;
+}
+#restaurants .contenaire .restaurants__cartes .carte a .nouveau1 {
+  background-color: rgb(46, 171, 171);
+  position: absolute;
+  top: 6%;
+  right: 3%;
+  padding: 0.5rem;
+}
+#restaurants .contenaire .restaurants__cartes .carte a footer {
+  display: flex;
+  justify-content: space-between;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 15%;
+  position: relative;
+}
+#restaurants .contenaire .restaurants__cartes .carte a footer .pied {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+#restaurants .contenaire .restaurants__cartes .carte a footer .pied h3,
+#restaurants .contenaire .restaurants__cartes .carte a footer .pied span {
+  padding: 0;
+  margin: 0;
+}
+#restaurants .contenaire .restaurants__cartes .carte a footer .pied far fa-heart {
+  position: absolute;
+  top: 50%;
+  right: 3%;
+}
+
+main {
+  background-color: width;
+}
+main .localisation {
+  background-color: #f6f6f6;
+}
+main .localisation .fa-sharp {
+  margin-right: 0.5rem;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.proposition {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.proposition button {
+  color: #f2f2f2;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  width: 90%;
+  padding: 1rem 1.5rem;
+  margin: 0 1rem;
+  border-radius: 2rem;
+  background-color: #686868;
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.8), rgba(255, 121, 218, 0.8));
+  cursor: pointer;
+  box-shadow: 12px 0px 5px 1px rgba(0, 0, 255, 0.2);
+  transition-duration: 150ms;
+}
+.proposition button:hover {
+  transform: scale(1.05);
+}
+
+.fonctionnement {
+  background-color: #f6f6f6;
+}
+.fonctionnement .contenaire h2 {
+  margin: 1rem;
+}
+.fonctionnement .contenaire ol {
+  counter-reset: liste;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1rem;
+  padding: 1rem;
+}
+.fonctionnement .contenaire ol li::before {
+  content: counter(liste);
+  counter-increment: liste;
+  color: white;
+  background-color: purple;
+  width: 2rem;
+  height: 2rem;
+  gap: 1rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  left: -1rem;
+  top: 0.5rem;
+}
+.fonctionnement .contenaire ol li {
+  display: flex;
+  position: relative;
+  list-style-type: none;
+  border: none;
+  padding: 1rem 2rem;
+  flex-grow: 1;
+  border-radius: 2rem;
+  background-color: #f6f6f6;
+  cursor: pointer;
+}
+.fonctionnement .contenaire ol li:hover {
+  transform: scale(1.05);
+}
+.fonctionnement .contenaire ol li .fas {
+  margin-right: 1rem;
+}/*# sourceMappingURL=style.css.map */

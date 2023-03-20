@@ -1,0 +1,21 @@
+footer .foot {
+  background-color: black;
+}
+footer .foot h2 {
+  height: 15px;
+  margin-left: 2rem;
+  color: white;
+}
+footer .foot ul {
+  list-style: none;
+}
+footer .foot ul li {
+  padding: 0.3rem;
+}
+footer .foot ul li a {
+  text-decoration: none;
+  color: white;
+}
+footer .foot ul li a i {
+  margin-right: 0.5rem;
+}/*# sourceMappingURL=foter.css.map */

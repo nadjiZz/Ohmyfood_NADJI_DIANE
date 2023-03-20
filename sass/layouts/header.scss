@@ -1,0 +1,9 @@
+@use "../utils/variable.scss";
+header {
+    justify-content: center;
+    padding: 1rem;
+    box-shadow: 0 0 0 10 rgba(0, 0, 0, 2);
+    order: 1;
+    background-color: variable.$couleur-primaire;
+
+  }
