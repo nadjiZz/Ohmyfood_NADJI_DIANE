@@ -18,7 +18,7 @@ main {
     }
 
     & .ensembles {
-        width: 100%;
+        padding: 1rem;
         margin-top: -3rem;
         border-top-right-radius: 2rem;
         border-top-left-radius: 2rem;
@@ -28,15 +28,50 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-
         & .titre-anim {
-            padding: 1rem 2rem 1rem 1rem;
+            padding: 2rem 0;
+            width: 100%;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            position: relative;
+            & h1 {
+                align-items: flex-start;
+                background-color: initial;
+                display: flex;
+                justify-content: space-around;
+                position: relative;
+                & .far {
+                  position: absolute;
+                  right: -90%;
+                  display: block;
+                  opacity: 1;
+                }
+    
+                & .fas {
+                  position: absolute;
+                  right: -90%;
+                  display: block;
+                  color: #ed64f6;
+                  opacity: 0;
+                }
+               
+                
+              }
+               & :hover {
+                  & .far {
+                    opacity: 0;
+                  }
+                  & .fas {
+                    transition-duration: 400ms;
+                    
+                    opacity: 1;
+                  }
+                }
         }
 
         & .ensemble {
+            width: 100%;
             display: grid;
             grid-template-columns: auto auto auto;
             @media (max-width: 800px) {
@@ -55,15 +90,6 @@ main {
                     position: relative;
                     padding-bottom: 0.5rem;
                     font-weight: normal;
-                    & h3::after {
-                            content: "";
-                            width: 3rem;
-                            height: .25rem;
-                            background-color: #99e2d1;
-                            position: absolute;
-                            left: 0;
-                            bottom: 0;
-                    }
 
                     }
 
@@ -76,7 +102,7 @@ main {
                         margin-bottom: 1rem;
                         & .menu {
                             margin: 1rem 0;
-                            padding: 1rem;
+                            padding: 0.5rem 1rem .5rem .5rem;
                             background-color: white;
                             border-radius: 1rem;
                             box-shadow: 0.25rem 0.25rem 1rem rgba(0,0,0,.1);
@@ -91,7 +117,7 @@ main {
 
 
                             & .menus-colone {
-                                font-weight: 300;
+                                font-weight: 100
 
                             }
 
