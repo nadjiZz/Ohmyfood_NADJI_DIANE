@@ -5,6 +5,7 @@
   justify-content: center;
   align-content: center;
   background-color: variable.$couleur-seconaire;
+
   & h2 {
     margin: 1rem;
   }
@@ -13,9 +14,11 @@
     justify-content: center;
     display: grid;
     grid-template-columns: auto auto auto auto;
+
     @media (max-width: 800px) {
-      grid-template-columns: auto auto ;
+      grid-template-columns: auto auto;
     }
+
     @media (max-width: 450px) {
       grid-template-columns: auto;
     }
@@ -75,14 +78,44 @@
               margin: 0;
             }
           }
+
           & .coeur {
-            padding: 1rem;
-         
+            height: 2rem;
+            width: 2rem;
+            background-color: initial;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            & .far {
+              position: absolute;
+              display: block;
+              opacity: 1;
             }
 
+            & .fas {
+              position: absolute;
+              display: block;
+              color: #ed64f6;
+              opacity: 0;
+            }
+           
+            
           }
+           & :hover {
+              & .far {
+                opacity: 0;
+              }
+              & .fas {
+                transition-duration: 400ms;
+                
+                opacity: 1;
+              }
+            }
         }
       }
-
     }
   }
+
+}

@@ -2,3 +2,21 @@
 @use "../utils/mixin.scss";
 @use "../utils/variable.scss";
 
+button {
+
+    color: variable.$couleur-primaire;
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+    width: max-content;
+    padding: 1rem 1.5rem;
+    margin: 0 4rem;
+    border-radius: 2rem;
+    @include mixin.bg-image;
+    cursor: pointer;
+    @include mixin.box-shado;
+    transition-duration: 150ms;
+    &:hover {
+      @include mixin.over;
+    }
+}
