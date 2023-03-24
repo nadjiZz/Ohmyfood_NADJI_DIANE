@@ -31,13 +31,12 @@ main p {
   padding: 0%;
 }
 main .ensembles {
-  padding: 1rem;
+  position: relative;
   margin-top: -3rem;
   border-top-right-radius: 2rem;
   border-top-left-radius: 2rem;
   background-color: #f6f6f6;
   z-index: 1;
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,28 +44,25 @@ main .ensembles {
 main .ensembles .titre-anim {
   padding: 2rem 0;
   width: 100%;
+}
+main .ensembles .titre-anim h1 {
+  background-color: initial;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
-}
-main .ensembles .titre-anim h1 {
-  align-items: flex-start;
-  background-color: initial;
-  display: flex;
-  justify-content: space-around;
+  padding: 1rem 2rem 0 1rem;
   position: relative;
 }
 main .ensembles .titre-anim h1 .far {
   position: absolute;
-  right: -90%;
   display: block;
+  right: 3%;
   opacity: 1;
 }
 main .ensembles .titre-anim h1 .fas {
   position: absolute;
-  right: -90%;
   display: block;
+  right: 3%;
   color: #ed64f6;
   opacity: 0;
 }
@@ -96,26 +92,35 @@ main .ensembles .ensemble .contenaire {
 main .ensembles .ensemble .contenaire .capital {
   text-transform: uppercase;
   position: relative;
+  margin: 0.5rem;
   padding-bottom: 0.5rem;
-  font-weight: normal;
+  font-weight: 500;
+}
+main .ensembles .ensemble .contenaire .capital::after {
+  content: "";
+  width: 2.5rem;
+  height: 0.2rem;
+  background-color: #99e2d0;
+  position: absolute;
+  left: 0%;
+  bottom: 0;
 }
 main .ensembles .ensemble .contenaire .liste-menu {
   list-style: none;
   padding: 0;
-  margin-right: 0.5rem;
+  margin: 0 0.5rem;
 }
 main .ensembles .ensemble .contenaire .liste-menu .menus {
   margin-bottom: 1rem;
 }
 main .ensembles .ensemble .contenaire .liste-menu .menus .menu {
-  margin: 1rem 0;
-  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  height: 4rem;
   background-color: white;
   border-radius: 1rem;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
   overflow: hidden;
   cursor: pointer;
   animation: itemAppear 0.5s;
@@ -124,20 +129,20 @@ main .ensembles .ensemble .contenaire .liste-menu .menus .menu {
 }
 main .ensembles .ensemble .contenaire .liste-menu .menus .menu .menus-colone {
   font-weight: 100;
+  display: grid;
 }
 main .ensembles .ensemble .contenaire .liste-menu .menus .menu .menu-prix {
   margin-left: auto;
-  padding: 0 2.5rem;
-  font-weight: 400;
+  padding: 0 1.5rem 0 0;
+  font-weight: 500;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding-left: 0.5rem;
 }
 main .ensembles .ensemble .contenaire .liste-menu .menus .cocher {
   border-radius: 0 1rem 1rem 0;
-  margin-right: -4rem;
-  transition: margin-right 0.5 s;
+  margin-right: -3rem;
+  transition: margin-right 0.8s;
   opacity: 0;
 }
 main .ensembles .ensemble .contenaire .liste-menu .menus .cocher .fas {
@@ -151,16 +156,15 @@ main .ensembles .ensemble .contenaire .liste-menu .menus :hover .cocher {
   background-color: #99e2d1;
   margin: -1rem;
   width: 4rem;
-  min-height: 5rem;
-  max-height: 15rem;
+  height: 6rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-duration: 0.5s;
+  transition-duration: 0.8s;
   opacity: 1;
 }
 main .ensembles .ensemble .contenaire .liste-menu .menus :hover .fas {
-  animation: car 0.5s easy in-out;
+  animation: car 0.8s easy in-out;
   transform: rotate(360deg);
   transition-duration: 0.5s;
 }
