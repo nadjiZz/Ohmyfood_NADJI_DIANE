@@ -2,6 +2,7 @@
 @use "../utils/variable.scss";
 
 .fonctionnement {
+  margin: 0 1rem;
     background-color: variable.$couleur-primaire;
     & .contenaire {
       & h2 {
@@ -22,8 +23,9 @@
         li::before {
           content: counter(liste);
           counter-increment: liste;
-          color: #f6f6f6;
-          @include mixin.bg-image;
+          color: variable.$couleur-primaire;
+          background-image: linear-gradient(70deg,#9356DC ,
+    #62135e);
           width: 2rem;
           height: 2rem;
           gap: 1rem;
@@ -36,6 +38,9 @@
         }
         
         & li {
+          & .degustez {
+            background-color: #f9e2f8;
+          }
           gap:1rem;
           display: flex;
           position: relative;
@@ -48,7 +53,7 @@
           cursor: pointer;
           &:hover {
             @include mixin.over;
-            background-color: #ddc9dc;
+            
           }
           & .fas {
             margin-right: 1rem;

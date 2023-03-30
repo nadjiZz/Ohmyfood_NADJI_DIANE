@@ -15,7 +15,7 @@ main {
     }
   }
   .localisation {
-    background-color:  rgb(235, 235, 230);
+    @include mixin.box-shado;
   }
 
   .center {

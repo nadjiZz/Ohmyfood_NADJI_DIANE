@@ -1,1 +1,1 @@
-{"version":3,"sources":["foter.scss","foter.css"],"names":[],"mappings":"AAEI;EACE,uBAAA;ACDN;ADGM;EACE,YAAA;EACA,iBAAA;EACA,YAAA;ACDR;ADIM;EACE,gBAAA;ACFR;ADIQ;EACE,eAAA;ACFV;ADIU;EACE,qBAAA;EACA,YAAA;ACFZ;ADIY;EACE,oBAAA;ACFd","file":"foter.css"}
+{"version":3,"sources":["foter.scss","foter.css","../utils/variable.scss"],"names":[],"mappings":"AAKI;EACE,yBAAA;ACJN;ADMM;EACE,YAAA;EACA,iBAAA;EACA,YEXW;ADOnB;ADMM;EACE,gBAAA;ACJR;ADMQ;EACE,eAAA;ACJV;ADMU;EACE,qBAAA;EACA,YErBO;ADiBnB;ADMY;EACE,oBAAA;ACJd","file":"foter.css"}

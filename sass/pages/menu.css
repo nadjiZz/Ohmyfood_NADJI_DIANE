@@ -8,7 +8,7 @@ button {
   padding: 1rem 1.5rem;
   margin: 0 4rem;
   border-radius: 2rem;
-  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.8), rgba(255, 121, 218, 0.8));
+  background-image: linear-gradient(0deg, #9356DC, #FF79DA);
   cursor: pointer;
   box-shadow: 2px 2px 0 0 rgba(208, 199, 199, 0.7176470588);
   transition-duration: 150ms;
@@ -31,6 +31,10 @@ main h6,
 main p {
   margin: 0%;
   padding: 0%;
+}
+main img {
+  width: 100%;
+  height: 20rem;
 }
 main .ensembles {
   position: relative;
@@ -65,7 +69,7 @@ main .ensembles .titre-anim h1 .fas {
   position: absolute;
   display: block;
   right: 3%;
-  color: #ed64f6;
+  color: #FF79DA;
   opacity: 0;
 }
 main .ensembles .titre-anim :hover .far {
@@ -102,7 +106,7 @@ main .ensembles .ensemble .contenaire .capital::after {
   content: "";
   width: 2.5rem;
   height: 0.2rem;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   position: absolute;
   left: 0%;
   bottom: 0;
@@ -112,8 +116,65 @@ main .ensembles .ensemble .contenaire .liste-menu {
   padding: 0;
   margin: 0 0.5rem;
 }
+main .ensembles .ensemble .contenaire .liste-menu .animation1 {
+  animation: slideDown 1s;
+  transform: transforme ease-in-out 1s;
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+main .ensembles .ensemble .contenaire .liste-menu .animation2 {
+  animation: slideDown 1.5s;
+  transform: transforme ease-in-out 1s;
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+main .ensembles .ensemble .contenaire .liste-menu .animation3 {
+  animation: slideTop 2s;
+  transform: transforme ease-in-out 1s;
+}
+@keyframes slideTop {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+main .ensembles .ensemble .contenaire .liste-menu .animation4 {
+  animation: slideDown 2.5s;
+  transform: transforme ease-in-out 1s;
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 main .ensembles .ensemble .contenaire .liste-menu .menus {
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 main .ensembles .ensemble .contenaire .liste-menu .menus .menu {
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
@@ -125,9 +186,6 @@ main .ensembles .ensemble .contenaire .liste-menu .menus .menu {
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  animation: itemAppear 0.5s;
-  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-  transform: scale(1);
 }
 main .ensembles .ensemble .contenaire .liste-menu .menus .menu .menus-colone {
   font-weight: 100;
@@ -155,7 +213,7 @@ main .ensembles .ensemble .contenaire .liste-menu .menus .cocher .fas {
   justify-content: center;
 }
 main .ensembles .ensemble .contenaire .liste-menu .menus :hover .cocher {
-  background-color: #99e2d1;
+  background-color: #99E2D0;
   margin: -1rem;
   width: 4rem;
   height: 6rem;
@@ -180,7 +238,7 @@ main .ensembles button {
   padding: 1rem 1.5rem;
   margin: 0 4rem;
   border-radius: 2rem;
-  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.8), rgba(255, 121, 218, 0.8));
+  background-image: linear-gradient(0deg, #9356DC, #FF79DA);
   cursor: pointer;
   box-shadow: 2px 2px 0 0 rgba(208, 199, 199, 0.7176470588);
   transition-duration: 150ms;

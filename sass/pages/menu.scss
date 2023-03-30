@@ -17,6 +17,11 @@ main {
         padding: 0%;
     }
 
+    img {
+        width: 100%;
+        height: 20rem;
+    }
+
     & .ensembles {
         position: relative;
         margin-top: -3rem;
@@ -27,9 +32,11 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
+
         & .titre-anim {
             padding: 2rem 0;
             width: 100%;
+
             & h1 {
                 background-color: initial;
                 display: flex;
@@ -37,82 +44,169 @@ main {
                 justify-content: space-between;
                 padding: 1rem 2rem 0 1rem;
                 position: relative;
+
                 & .far {
-                  position: absolute;
-                  display: block;
-                  right: 3%;
-                  opacity: 1;
+                    position: absolute;
+                    display: block;
+                    right: 3%;
+                    opacity: 1;
                 }
+
                 & .fas {
-                  position: absolute;
-                  display: block;
-                  right: 3%;
-                  color: #ed64f6;
-                  opacity: 0;
-                } 
-              }
-               & :hover {
-                  & .far {
+                    position: absolute;
+                    display: block;
+                    right: 3%;
+                    color: #FF79DA;
                     opacity: 0;
-                  }
-                  & .fas {
+                }
+            }
+
+            & :hover {
+                & .far {
+                    opacity: 0;
+                }
+
+                & .fas {
                     transition-duration: 400ms;
                     opacity: 1;
-                  }
                 }
+            }
         }
+
         & .ensemble {
+
+
             width: 100%;
             display: grid;
             grid-template-columns: auto auto auto;
+
             @media (max-width: 800px) {
                 grid-template-columns: auto;
+
                 & .liste-menu {
                     margin-right: 0;
-                } 
+                }
             }
+
             & .contenaire {
                 margin: 0;
+
                 & .capital {
                     text-transform: uppercase;
                     position: relative;
                     margin: .5rem;
                     padding-bottom: 0.5rem;
                     font-weight: 500;
-                    }
-                    & .capital::after {
-                        content: "";
-                        width: 2.5rem;
-                        height: .20rem;
-                        background-color: #99e2d0;
-                        position: absolute;
-                        left: 0%;
-                        bottom: 0;
-                    }
+                }
+
+                & .capital::after {
+                    content: "";
+                    width: 2.5rem;
+                    height: .20rem;
+                    background-color: #99E2D0;
+                    position: absolute;
+                    left: 0%;
+                    bottom: 0;
+                }
+
                 & .liste-menu {
                     list-style: none;
                     padding: 0;
                     margin: 0 .5rem;
-                    
+
+                    & .animation1 {
+                        animation: slideDown 1s;
+                        transform: transforme ease-in-out 1s;
+
+                        @keyframes slideDown {
+                            0% {
+                                transform: translateY(20px);
+                                opacity: 0;
+                            }
+
+                            100% {
+                                transform: translateY(0);
+                                opacity: 1;
+                            }
+                        }
+
+                    }
+
+                    & .animation2 {
+                        animation: slideDown 1.5s;
+                        transform: transforme ease-in-out 1s;
+
+                        @keyframes slideDown {
+                            0% {
+                                transform: translateY(20px);
+                                opacity: 0;
+                            }
+
+                            100% {
+                                transform: translateY(0);
+                                opacity: 1;
+                            }
+                        }
+
+                    }
+
+                    & .animation3 {
+                        animation: slideTop 2s;
+                        transform: transforme ease-in-out 1s;
+
+                        @keyframes slideTop {
+                            0% {
+                                transform: translateY(20px);
+                                opacity: 0;
+                            }
+
+                            100% {
+                                transform: translateY(0);
+                                opacity: 1;
+                            }
+                        }
+
+                    }
+
+                    & .animation4 {
+                        animation: slideDown 2.5s;
+                        transform: transforme ease-in-out 1s;
+
+                        @keyframes slideDown {
+                            0% {
+                                transform: translateY(20px);
+                                opacity: 0;
+                            }
+
+                            100% {
+                                transform: translateY(0);
+                                opacity: 1;
+                            }
+                        }
+
+                    }
+
                     & .menus {
                         margin-bottom: 1rem;
+                        cursor: pointer;
+
+
                         & .menu {
                             padding: .5rem .5rem .5rem .5rem;
                             height: 4rem;
                             background-color: white;
                             border-radius: 1rem;
-                            box-shadow: 0.25rem 0.25rem 1rem rgba(0,0,0,.1);
+                            box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, .1);
                             display: flex;
                             justify-content: space-between;
                             overflow: hidden;
                             cursor: pointer;
-                            animation: itemAppear .5s;
-                            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-                            transform: scale(1);
+
                             & .menus-colone {
                                 font-weight: 100;
                                 display: grid;
                             }
+
                             & .menu-prix {
                                 margin-left: auto;
                                 padding: 0 1.5rem 0 0;
@@ -122,23 +216,26 @@ main {
                                 align-items: flex-end;
                             }
                         }
+
                         & .cocher {
                             $button-width: 3rem;
                             border-radius: 0 1rem 1rem 0;
                             margin-right: - $button-width;
                             transition: margin-right 0.8s;
                             opacity: 0;
+
                             & .fas {
-                            width: 1rem;
-                            color: variable.$couleur-primaire;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;  
+                                width: 1rem;
+                                color: variable.$couleur-primaire;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
                             }
                         }
+
                         & :hover {
                             .cocher {
-                                background-color: #99e2d1;
+                                background-color: #99E2D0;
                                 margin: -1rem;
                                 width: 4rem;
                                 height: 6rem;
@@ -148,6 +245,7 @@ main {
                                 transition-duration: .8s;
                                 opacity: 1;
                             }
+
                             & .fas {
                                 animation: car 0.8s easy in-out;
                                 transform: rotate(360deg);
@@ -157,7 +255,9 @@ main {
                     }
                 }
             }
+
         }
+
         & button {
 
             color: variable.$couleur-primaire;
@@ -172,8 +272,9 @@ main {
             cursor: pointer;
             @include mixin.box-shado;
             transition-duration: 150ms;
+
             &:hover {
-              @include mixin.over;
+                @include mixin.over;
             }
         }
     }

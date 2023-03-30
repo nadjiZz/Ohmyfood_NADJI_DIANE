@@ -1,14 +1,16 @@
 // le pied de la page d'aceuil//
+@use "../utils/mixin.scss";
+@use "../utils/variable.scss";
+
 footer {
     & .foot {
-      background-color: black;
+      background-color: #343434;
   
       & h2 {
         height: 15px;
         margin-left: 2rem;
-        color: white;
+        color: variable.$couleur-primaire;
       }
-  
       & ul {
         list-style: none;
   
@@ -17,7 +19,7 @@ footer {
   
           a {
             text-decoration: none;
-            color: white;
+            color: variable.$couleur-primaire;
   
             & i {
               margin-right: 0.5rem;

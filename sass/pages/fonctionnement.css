@@ -1,4 +1,5 @@
 .fonctionnement {
+  margin: 0 1rem;
   background-color: white;
 }
 .fonctionnement .contenaire h2 {
@@ -20,8 +21,8 @@
 .fonctionnement .contenaire ol li::before {
   content: counter(liste);
   counter-increment: liste;
-  color: #f6f6f6;
-  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.8), rgba(255, 121, 218, 0.8));
+  color: white;
+  background-image: linear-gradient(70deg, #9356DC, #62135e);
   width: 2rem;
   height: 2rem;
   gap: 1rem;
@@ -44,9 +45,11 @@
   background-color: #f6f6f6;
   cursor: pointer;
 }
+.fonctionnement .contenaire ol li .degustez {
+  background-color: #f9e2f8;
+}
 .fonctionnement .contenaire ol li:hover {
   transform: scale(1.05);
-  background-color: #ddc9dc;
 }
 .fonctionnement .contenaire ol li .fas {
   margin-right: 1rem;
