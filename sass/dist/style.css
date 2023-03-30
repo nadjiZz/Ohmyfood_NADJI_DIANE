@@ -23,7 +23,7 @@ header {
 }
 
 footer .foot {
-  background-color: black;
+  background-color: #343434;
 }
 footer .foot h2 {
   height: 15px;
@@ -75,6 +75,10 @@ main h6,
 main p {
   margin: 0%;
   padding: 0%;
+}
+main img {
+  width: 100%;
+  height: 20rem;
 }
 main .ensembles {
   position: relative;
@@ -155,12 +159,56 @@ main .ensembles .ensemble .contenaire .liste-menu {
   list-style: none;
   padding: 0;
   margin: 0 0.5rem;
-  animation-duration: 2s;
-  animation-name: animation1;
 }
-@keyframes animation1 {
+main .ensembles .ensemble .contenaire .liste-menu .animation1 {
+  animation: slideDown 1s;
+  transform: transforme ease-in-out 1s;
+}
+@keyframes slideDown {
   0% {
-    transform: translateY(50%);
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+main .ensembles .ensemble .contenaire .liste-menu .animation2 {
+  animation: slideDown 1.5s;
+  transform: transforme ease-in-out 1s;
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+main .ensembles .ensemble .contenaire .liste-menu .animation3 {
+  animation: slideTop 2s;
+  transform: transforme ease-in-out 1s;
+}
+@keyframes slideTop {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+main .ensembles .ensemble .contenaire .liste-menu .animation4 {
+  animation: slideDown 2.5s;
+  transform: transforme ease-in-out 1s;
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(20px);
     opacity: 0;
   }
   100% {
@@ -170,6 +218,7 @@ main .ensembles .ensemble .contenaire .liste-menu {
 }
 main .ensembles .ensemble .contenaire .liste-menu .menus {
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 main .ensembles .ensemble .contenaire .liste-menu .menus .menu {
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
@@ -181,9 +230,6 @@ main .ensembles .ensemble .contenaire .liste-menu .menus .menu {
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  animation: itemAppear 0.5s;
-  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-  transform: scale(1);
 }
 main .ensembles .ensemble .contenaire .liste-menu .menus .menu .menus-colone {
   font-weight: 100;
@@ -359,7 +405,7 @@ main .localisation .fa-sharp {
 }
 
 .localisation {
-  background-color: #ebebe6;
+  box-shadow: 2px 2px 0 0 #d0c7c7b7;
 }
 
 .center {
@@ -395,6 +441,7 @@ main .localisation .fa-sharp {
 }
 
 .fonctionnement {
+  margin: 0 1rem;
   background-color: white;
 }
 .fonctionnement .contenaire h2 {
@@ -416,8 +463,8 @@ main .localisation .fa-sharp {
 .fonctionnement .contenaire ol li::before {
   content: counter(liste);
   counter-increment: liste;
-  color: #f6f6f6;
-  background-image: linear-gradient(0deg, #9356DC, #FF79DA);
+  color: white;
+  background-image: linear-gradient(70deg, #9356DC, #62135e);
   width: 2rem;
   height: 2rem;
   gap: 1rem;
@@ -440,40 +487,50 @@ main .localisation .fa-sharp {
   background-color: #f6f6f6;
   cursor: pointer;
 }
+.fonctionnement .contenaire ol li .degustez {
+  background-color: #f9e2f8;
+}
 .fonctionnement .contenaire ol li:hover {
   transform: scale(1.05);
-  background-color: #ddc9dc;
 }
 .fonctionnement .contenaire ol li .fas {
   margin-right: 1rem;
 }
 
 .lds-ripple {
-  display: inline-block;
-  position: relative;
-  width: 64px;
-  height: 64px;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  z-index: 1;
+  top: 45%;
+  left: 42%;
+  width: 100px;
+  height: 100px;
 }
 
 .lds-ripple div {
   position: absolute;
   border: 4px solid #cef;
+  top: 50%;
+  left: 50%;
   opacity: 1;
+  inset: 0;
   border-radius: 50%;
-  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  animation: lds-ripple 3s cubic-bezier(0, 0.2, 0.8, 1) forwards;
 }
 
 .lds-ripple div:nth-child(2) {
-  animation-delay: -0.5s;
+  animation-delay: 0.2s;
 }
 
 @keyframes lds-ripple {
   0% {
     top: 28px;
     left: 28px;
-    width: 0;
-    height: 0;
-    opacity: 1;
+    width: 50px;
+    height: 50px;
+    opacity: 0.9;
+    transform: scale(1);
   }
   100% {
     top: -1px;
@@ -481,5 +538,6 @@ main .localisation .fa-sharp {
     width: 58px;
     height: 58px;
     opacity: 0;
+    transform: scale(0);
   }
 }

@@ -73,8 +73,8 @@ main h4,
 main h5,
 main h6,
 main p {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
 }
 main img {
   width: 100%;
@@ -162,7 +162,6 @@ main .ensembles .ensemble .contenaire .liste-menu {
 }
 main .ensembles .ensemble .contenaire .liste-menu .animation1 {
   animation: slideDown 1s;
-  transform: transforme ease-in-out 1s;
 }
 @keyframes slideDown {
   0% {
@@ -176,7 +175,6 @@ main .ensembles .ensemble .contenaire .liste-menu .animation1 {
 }
 main .ensembles .ensemble .contenaire .liste-menu .animation2 {
   animation: slideDown 1.5s;
-  transform: transforme ease-in-out 1s;
 }
 @keyframes slideDown {
   0% {
@@ -190,7 +188,6 @@ main .ensembles .ensemble .contenaire .liste-menu .animation2 {
 }
 main .ensembles .ensemble .contenaire .liste-menu .animation3 {
   animation: slideTop 2s;
-  transform: transforme ease-in-out 1s;
 }
 @keyframes slideTop {
   0% {
@@ -204,7 +201,6 @@ main .ensembles .ensemble .contenaire .liste-menu .animation3 {
 }
 main .ensembles .ensemble .contenaire .liste-menu .animation4 {
   animation: slideDown 2.5s;
-  transform: transforme ease-in-out 1s;
 }
 @keyframes slideDown {
   0% {
@@ -268,7 +264,7 @@ main .ensembles .ensemble .contenaire .liste-menu .menus :hover .cocher {
   opacity: 1;
 }
 main .ensembles .ensemble .contenaire .liste-menu .menus :hover .fas {
-  animation: car 0.8s easy in-out;
+  animation: car 0.8s ease-in-out;
   transform: rotate(360deg);
   transition-duration: 0.5s;
 }
@@ -394,7 +390,7 @@ main .ensembles button:hover {
 
 main {
   font-size: 800;
-  background-color: width;
+  background-color: white;
 }
 main .localisation {
   background-color: #f6f6f6;
@@ -446,7 +442,7 @@ main .localisation .fa-sharp {
 }
 .fonctionnement .contenaire h2 {
   margin: 1rem;
-  padding: 1;
+  padding: 1rem;
 }
 .fonctionnement .contenaire ol {
   display: flex;

@@ -13,8 +13,8 @@ main {
     h5,
     h6,
     p {
-        margin: 0%;
-        padding: 0%;
+        margin: 0;
+        padding: 0;
     }
 
     img {
@@ -116,7 +116,7 @@ main {
 
                     & .animation1 {
                         animation: slideDown 1s;
-                        transform: transforme ease-in-out 1s;
+
 
                         @keyframes slideDown {
                             0% {
@@ -134,7 +134,7 @@ main {
 
                     & .animation2 {
                         animation: slideDown 1.5s;
-                        transform: transforme ease-in-out 1s;
+
 
                         @keyframes slideDown {
                             0% {
@@ -152,7 +152,7 @@ main {
 
                     & .animation3 {
                         animation: slideTop 2s;
-                        transform: transforme ease-in-out 1s;
+
 
                         @keyframes slideTop {
                             0% {
@@ -170,7 +170,7 @@ main {
 
                     & .animation4 {
                         animation: slideDown 2.5s;
-                        transform: transforme ease-in-out 1s;
+
 
                         @keyframes slideDown {
                             0% {
@@ -247,7 +247,7 @@ main {
                             }
 
                             & .fas {
-                                animation: car 0.8s easy in-out;
+                                animation: car 0.8s ease-in-out;
                                 transform: rotate(360deg);
                                 transition-duration: .5s;
                             }
