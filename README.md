@@ -12,4 +12,4 @@ En tant que devellopeur web, mon objectif est de développer un site 100% mobile
 
 • Anissa, commerciale chargée de démarcher les restaurants ;
 
-• et moi : NADJI DIANE, chargée du développement du site.
+• Et moi : NADJI Diane, chargée du développement du site.
