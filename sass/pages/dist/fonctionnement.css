@@ -51,6 +51,9 @@
 .fonctionnement .contenaire ol li:hover {
   transform: scale(1.05);
 }
-.fonctionnement .contenaire ol li .fas {
+.fonctionnement .contenaire ol li:hover i.fas {
+  color: #9356DC;
+}
+.fonctionnement .contenaire ol li i.fas {
   margin-right: 1rem;
 }

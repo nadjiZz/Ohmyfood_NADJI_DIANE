@@ -53,9 +53,12 @@
           cursor: pointer;
           &:hover {
             @include mixin.over;
+            & i.fas {
+              color: #9356DC;
+            }
             
           }
-          & .fas {
+          & i.fas {
             margin-right: 1rem;
           }
         }

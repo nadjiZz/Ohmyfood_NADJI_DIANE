@@ -5,11 +5,11 @@
   justify-content: center;
   align-content: center;
   background-color: variable.$couleur-seconaire;
-  
+
   & h2 {
     margin: 1rem;
   }
-
+      
   & .restaurants__cartes {
     justify-content: center;
     display: grid;
@@ -68,7 +68,6 @@
           & .pied {
             display: flex;
             flex-direction: column;
-
             padding: .5rem;
             align-items: flex-start;
 
@@ -88,6 +87,7 @@
             align-items: center;
             justify-content: center;
             position: relative;
+
             & .far {
               position: absolute;
               display: block;
@@ -100,19 +100,18 @@
               color: #ed64f6;
               opacity: 0;
             }
-           
-            
           }
-           & :hover {
-              & .far {
-                opacity: 0;
-              }
-              & .fas {
-                transition-duration: 400ms;
-                
-                opacity: 1;
-              }
+
+          & :hover {
+            & .far {
+              opacity: 0;
             }
+
+            & .fas {
+              transition-duration: 400ms;
+              opacity: 1;
+            }
+          }
         }
       }
     }
